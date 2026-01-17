@@ -1,5 +1,4 @@
 {
-  # Add your overlays here
-  #
-  # my-overlay = import ./my-overlay;
+  # Default overlay that adds all packages to nixpkgs
+  default = final: prev: import ../pkgs prev;
 }
